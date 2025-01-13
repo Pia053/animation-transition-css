@@ -1,0 +1,48 @@
+1. Transition
+// Quá trình chuyển đổi mất bao nhiêu TGTG: khoản thời gian
+-, transition-duration => thời gian chuyển đổi
+// 250-500 ms
+
+// Thuộc tính nào được áp dụng transition
+-, transition-property => hiệu ứng thay đổi cho (vd: w, h, all)
+
+-, transition-timing-function:
+// các thuộc tính của timing: dễ dàng - vào -ra 
++, ease: quá trình chuyển đôi tăng tốc ban đầu, sau đó giảm tốc khi kết thúc
++, ease-in: khởi đầu chậm, sau đó tăng tốc dần 
++, ease-out: khởi đầu nhanh, giảm tốc dần
++, ease-in-out: khởi đầu chậm, giữa tăng, kết thúc chậm
++, linear: cùng tốc độ từ đầu đến cuối
++, cubic-bezier(n,n,n,n): giá trị cho từng giai đoạn, giá trị n (0-1)
+
+// Khoảng thời gian chờ đợi trước khi các hiệu ứng của quá trình chuyển đổi bắt đầu
+-, transition-delay: 5s => sau 5s thì áp dụng hiệu ứng
+
+// Cách viết ngắn gọn
+-, transition: [property] [duration] [timing-function] [delay];
+
+
+2. Animation
+
+// Tên cho cái Animation
+-, animation-name: (name)
+@keyframes (name){
+    0%{}
+    100%{}
+
+or 
+    from{}
+    to{}
+}
+
+// Trong khoảng thời gian là 2s
+-, animation-duration:
+
+// Số lần animation thực hiện : infinite: liên tục
+-, animation-iteration-count: 3 or infinite
+
+// Biến đổi màu
+-, animation-direction: alternate
+
+// Ngắn gọn
+- animation: [@keyframes] [duration] [count] [direction]
