@@ -1,0 +1,26 @@
+.me-bau {
+  border: 5px dashed black;
+  width: 300px;
+  margin-top: 50px;
+  margin-left: 50px;
+  position: relative;
+}
+
+.con-trai {
+  width: 200px;
+  height: 200px;
+  background: red;
+}
+
+.con-gai {
+  width: 100px;
+  height: 100px;
+  background: green;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+// position: absolute position: relative
+// absolute 0 sử dụng relative thì nó sẽ căn theo web
+// absolute ăn vị trí theo vị trí bao ngoài gần nhất của nó có thuộc tính: relative khác "static"
